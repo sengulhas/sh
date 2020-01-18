@@ -8,15 +8,15 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
-        #map { position:fixed; top:0; bottom:0; width:30%; }
+        #map { position:fixed; top:0; bottom:0; width:70%; }
     </style>
 </head>
 <body>
 
 <style>
 #features {
-    width: 50%;
-    margin-left: 50%;
+    width: 30%;
+    margin-left: 30%;
     font-family: sans-serif;
     overflow-y: scroll;
     background-color: #fafafa;
@@ -51,6 +51,7 @@ section:last-child {
         <h3>onun fotosu</h3>
         <img src="https://uploads.knightlab.com/storymapjs/93573c32cfef3f6424c2a01e1fbc4c2f/beyoglu/_images/nakiye elgun.jpg">
         <p>Or maybe check LA's Jazz history on Central Ave. Image Source - Wikipedia</p>
+        img { max-width: 100%; height: auto;}
     </section>
     <section id='chavezravine'>
         <h3>Remembering Chavez Ravine</h3>
@@ -99,20 +100,7 @@ labelLayerId = layers[i].id;
 break;
 }
 }
- 
-map.addLayer(
-{
-'id': '3d-buildings',
-'source': 'composite',
-'source-layer': 'building',
-'filter': ['==', 'extrude', 'true'],
-'type': 'fill-extrusion',
-'minzoom': 15,
-'paint': {
-'fill-extrusion-color': '#aaa',
- 
-// use an 'interpolate' expression to add a smooth transition effect to the
-    
+     
 );
 
 //This are the locations for your map to move along with your story
